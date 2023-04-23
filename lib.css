@@ -1,0 +1,67 @@
+body {
+color:black;
+background-color:white;
+/*background-image:url(familleenor.jpeg);*/
+background-repeat:no-repeat;
+background-position:center top;
+}
+
+.question {
+  font-size: 70px;
+  width: 100%;
+  text-align: center  ;
+}
+.pourcentage {
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  border-left: solid;
+  border-bottom: solid;
+  border-color: black;
+}
+.word {
+  font-size: 40px;
+  padding-left: 20px;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: black;
+  width: 40%;
+}
+#response0-1 {
+  border-top: solid;
+  border-color: black;
+}
+#response0-2 {
+  border-top: solid;
+  border-color: black;
+}
+#response5-1 {
+  border-top: solid;
+  border-color: black;
+}
+#response5-2 {
+  border-top: solid;
+  border-color: black;
+}
+
+.hidden {
+  background-color: grey;
+  color: grey;
+  cursor: grab;
+
+}
+.found {
+  background-color: blue;
+  color: yellow;
+}
+.off {
+  background-color: white;
+}
+
+.error {
+  width: 160px;
+  margin: 0 auto;
+}
+.error img {
+  width: 50px;
+}
