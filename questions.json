@@ -1,7 +1,41 @@
 {
+  "teams": ["EricTeam", "YohanTeam"],
   "questions": [
     {
       "text": "Une marque avec un animal sur le logo",
+      "responses": [
+        {
+          "text": "Puma",
+          "rate": 28
+        },
+        {
+          "text": "Lacoste",
+          "rate": 17
+        },
+        {
+          "text": "Ferrari",
+          "rate": 12
+        },
+        {
+          "text": "Peugeot",
+          "rate": 11
+        },
+        {
+          "text": "Jaguar",
+          "rate": 11
+        },
+        {
+          "text": "WWF",
+          "rate": 7
+        },
+        {
+          "text": "Caisse d'epargne",
+          "rate": 3
+        }
+      ]
+    },
+    {
+      "text": "New question !",
       "responses": [
         {
           "text": "Puma",

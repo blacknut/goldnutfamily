@@ -13,22 +13,33 @@
 
 <br/><br/>
 
+<div id="intro">
+  <img src="LOGO.jpg" height="1000px">
+  <br/>
+  <button id="start" type="button">Start the game</button> (<span id="generique">go</span>)
+</div>
+
+<div id="thegame">
 <table id="teams" width="100%" cellspacing="0"  height="100px">
   <tr>
-    <td id="team1"></td>
-    <td id="team2"></td>
+    <td style="width: 15%;"></td>
+    <td id="team1" class="team"></td>
+    <td style="width: 15%;"></td>
+    <td style="width: 15%;"></td>
+    <td id="team2" class="team"></td>
+    <td style="width: 15%;"></td>
   </tr>
   <tr>
-    <td id="team1-score"></td>
-    <td id="team2-score"></td>
+    <td style="width: 15%;"></td>
+    <td id="team1-score" class="team"></td>
+    <td style="width: 15%;"></td>
+    <td style="width: 15%;"></td>
+    <td id="team2-score" class="team"></td>
+    <td style="width: 15%;"></td>
   </tr>
 </table>
 
 <button id="newquestion" type="button">New question</button>
-<button id="team1win" type="button">Team 1 win</button>
-<button id="team2win" type="button">Team 2 win</button>
-
-
 
 <h1 id="question" class="question"></h1>	  
 
@@ -81,6 +92,16 @@
 </table>
 
 <div id="score"></div>
+
+
+<div id="winner">
+  <button id="team1win" type="button">Team 1 win</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button id="team2win" type="button">Team 2 win</button>
+</div>
+</div>
 
 
   </body>

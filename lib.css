@@ -15,6 +15,7 @@ background-position:center top;
   width: 100px;
   text-align: center;
   font-size: 50px;
+  height: 20%;
   border-left: solid;
   border-bottom: solid;
   border-color: black;
@@ -58,10 +59,76 @@ background-position:center top;
   background-color: white;
 }
 
+.team {
+  font-size: 50px;
+}
+
+#teams {
+  padding-bottom: 30px;
+}
+#score {
+  padding-top: 20px;
+  font-size: 50px;
+  width: 100%;
+  text-align: center  ;
+}
+
+#winner {
+  padding-top: 20px;
+  font-size: 50px;
+  width: 100%;
+  text-align: center  ;
+}
+
+#winner button {
+  background-color: #07064b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#newquestion {
+  padding-top: 20px;
+  font-size: 50px;
+  width: 100%;
+  text-align: center  ;
+  background-color: #07064b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ /* Green */
 .error {
   width: 160px;
   margin: 0 auto;
 }
 .error img {
   width: 50px;
+}
+
+#intro {
+  text-align: center  ;
+}
+#intro button {
+  background-color: #07064b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#thegame {
+  display: none;
 }
