@@ -7,7 +7,7 @@ background-position:center top;
 }
 
 .question {
-  font-size: 70px;
+  font-size: 30px;
   width: 100%;
   text-align: center  ;
 }
@@ -60,22 +60,22 @@ background-position:center top;
 }
 
 .team {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 #teams {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 #score {
-  padding-top: 20px;
-  font-size: 50px;
+  padding-top: 5px;
+  font-size: 30px;
   width: 100%;
   text-align: center  ;
 }
 
 #winner {
-  padding-top: 20px;
-  font-size: 50px;
+  padding-top: 5px;
+  font-size: 30px;
   width: 100%;
   text-align: center  ;
 }
@@ -92,8 +92,8 @@ background-position:center top;
 }
 
 #newquestion {
-  padding-top: 20px;
-  font-size: 50px;
+  padding-top: 5px;
+  font-size: 30px;
   width: 100%;
   text-align: center  ;
   background-color: #07064b;
@@ -112,7 +112,7 @@ background-position:center top;
   margin: 0 auto;
 }
 .error img {
-  width: 50px;
+  width: 40px;
 }
 
 #intro {

@@ -1,12 +1,13 @@
-counter = 0;
-score = 0;
-scoreTeam1 = 0;
-scoreTeam2 = 0;
-
-jsonpath = "http://localhost/questions.json";
+let counter = 0;
+let score = 0;
+let scoreTeam1 = 0;
+let scoreTeam2 = 0;
+let jsonpath = "https://s3.eu-west-1.amazonaws.com/blk.binaries/blacknut/elhostis/questions.json";
+let generique = new Audio('generique.mp3');
+let numQuestion = 0;
 
 $(document).ready(function(){
-  let generique = new Audio('generique.mp3');
+  
   $( "#generique" ).click(function() {
     generique.play();
   });
@@ -19,7 +20,7 @@ $(document).ready(function(){
     cleanup();    
   });
 
-  let numQuestion = 0;
+  
   $( "#newquestion" ).click(function() {
     cleanup()
     loadQuestion(numQuestion);
@@ -121,14 +122,92 @@ function loadQuestion(numQuestion) {
   });
 }
 
+function toto(num) {
+  let obj = $("#response" + num + "-2")
+  classes = obj.attr('class');
+  if (classes.includes("hidden")) {
+    if (!classes.includes("found")) {
+      obj.addClass('found');
+      obj.prev().addClass('found');
+      tmp = parseInt(obj.prev().text());
+      score = score + tmp;
+      new Audio('success.mp3').play();
+      $("#score").html(score + " points");
+    }
+  }
+}
+
 document.addEventListener('keydown', (event) => {
   var name = event.key;
   var code = event.code;
-  if (code == "KeyR") {
+  
+  if (code == "KeyG") { // Go generique
+    generique.play();
+  }
+  if (code == "KeyS") { // Start the game
+    generique.pause();
+    $("#intro").hide();
+    $("#thegame").show();
+    loadTeams();
+    cleanup();    
+  }
+  if (code == "KeyN") { // New question
+    cleanup()
+    loadQuestion(numQuestion);
+    numQuestion = numQuestion + 1;
+  }
+  if ((code == "KeyA") || (code == "KeyQ")) { // Team 1 win
+    scoreTeam1 = scoreTeam1 + score
+    score = 0
+    $("#team1-score").html(scoreTeam1 + " points");
+    $("#score").html(score + " point");
+  }
+  if (code == "KeyB") { // Team 2 win
+    scoreTeam2 = scoreTeam2 + score
+    score = 0
+    $("#team2-score").html(scoreTeam2 + " points");
+    $("#score").html(score + " point");
+  }
+
+  if (code == "Numpad0") { // Responses
+    toto(1)
+  }
+  if (code == "Numpad1") { 
+    toto(0)
+  }
+  if (code == "Numpad2") {
+    toto(1)
+  }
+  if (code == "Numpad3") {
+    toto(2)
+  }
+  if (code == "Numpad4") { 
+    toto(3)
+  }
+  if (code == "Numpad5") { 
+    toto(4)
+  }
+  if (code == "Numpad6") { 
+    toto(5)
+  }
+  if (code == "Numpad7") { 
+    toto(6)
+  }
+  if (code == "Numpad8") { 
+    toto(7)
+  }
+  if (code == "Numpad9") { 
+    toto(8)
+  }
+  if (code == "Numpad0") { 
+    toto(9)
+  }
+
+  if (code == "KeyR") { // Reset errors
     counter=0;
     $(".showerror").hide();
   }
-  if (code == "Space") {
+  if (code == "Space") { // Error
     counter=counter+1
     id = "#error" + counter
     $(".showerror").hide();
